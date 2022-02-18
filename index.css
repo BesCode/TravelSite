@@ -11,7 +11,6 @@ body{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     /*background-color: #e9cda8;*/
     color: inherit;
-    border: 1px solid black;
 }
 
 li{
@@ -85,6 +84,17 @@ header{
     color: white;
     font-size: 3em;
     font-weight: bolder;
+    animation: cyclic 4s ease-in 1s forwards;
+}
+
+@keyframes cyclic{
+    0%{
+        transform: translateX(-100%);
+    }
+
+    100%{
+        transform: translateX(0);
+    }
 }
 
 .longBox{
@@ -144,6 +154,17 @@ header{
 .secondImg{
     width: 40%;
     height: 100%;
+    animation: left 4s ease 1s forwards;
+}
+
+@keyframes left{
+    0%{
+        transform: translateX(-100%);
+    }
+
+    100%{
+        transform: translateX(0);
+    }
 }
 
 .secondImg img{
@@ -158,6 +179,17 @@ header{
 .secondText{
     width: 60%;
     padding: 2em 0;
+    animation: right 4s ease 1s forwards
+}
+
+@keyframes right{
+    0%{
+        transform: translateX(100%);
+    }
+
+    100%{
+        transform: translateX(0);
+    }
 }
 
 .secondText > p{
@@ -192,7 +224,22 @@ header{
     padding: .5em;
     width: 17em;
     height: 25em;
-  
+    animation: top 4s ease-in forwards;
+}
+
+@keyframes top{
+    0%{
+        transform: translateY(100%);
+    }
+
+    50%{
+        background-color: #3d7bb4;
+        transform: translateX(-100%);
+    }
+
+    100%{
+        transform: translateY(0);
+    }
 }
 
 .thirdGridImg img{
