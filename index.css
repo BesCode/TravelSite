@@ -1,0 +1,320 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    max-width: 1024px;
+    margin: 0 auto;
+    font-size: 15px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    /*background-color: #e9cda8;*/
+    color: inherit;
+    border: 1px solid black;
+}
+
+li{
+    list-style: none;
+    margin-left: 1em;
+  
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover{
+    color: black;
+}
+
+ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+button{
+    background-color: #e74200;
+    color: white;
+    height: 2em;
+    width: 6em;
+}
+button:hover{
+    background-color: white;
+    color: black;
+}
+
+header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    height: 3em;
+}
+
+.container{
+    width: 1024px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 1em 10em;
+}
+
+#first{
+    width: 100%;
+    height: 28em;
+    background-color: black;
+    background-image: url(https://images.unsplash.com/photo-1580502304784-8985b7eb7260?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8c2FudG9yaW5pfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 1px solid black;
+    border-bottom-left-radius: 5em;
+    border-bottom-right-radius: 5em;
+}
+
+.firstText{
+    text-align: center;
+    padding: 10em;  
+}
+
+.firstText >h1{
+    color: white;
+    font-size: 3em;
+    font-weight: bolder;
+}
+
+.longBox{
+    width: 50em;
+    background-color: white;
+    margin: -4em auto 0;
+    border: 2px solid black;
+    border-radius: .4em;
+}
+
+.row{
+    display: grid;
+    grid-template-columns: 1fr 1fr 6fr;
+    background-color: #ddcece;
+ 
+}
+
+.row .colorMe{
+    background-color: white;
+    color: red;
+}
+
+.longBoxGrid{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: .5em;
+    padding: .5em;  
+}
+
+.longBoxItem{
+    padding: .5em;
+    gap: 1em;
+}
+
+.longBoxItem >h6{
+    padding-bottom: 1em;
+    font-weight: 100;
+    color: #ddcece;
+}
+
+.longBoxGrid input{
+    background-color: #ff0000;
+    width: 5em;
+    color: white;
+}
+#second{
+    padding-top: 2em;
+}
+.secondFlex{
+    width: 100%;
+    height: 30em;
+    display: flex;
+    gap: 3em;
+    padding: 5em 10em;
+}
+
+.secondImg{
+    width: 40%;
+    height: 100%;
+}
+
+.secondImg img{
+    width: 100%;
+    height: 100%;
+    border-top-right-radius: 2em;
+    border-bottom-right-radius: 2em;
+    border-top-left-radius: 2em;
+    box-shadow: -20px 20px rgb(216, 207, 207);
+}
+
+.secondText{
+    width: 60%;
+    padding: 2em 0;
+}
+
+.secondText > p{
+    padding: 1em 0 2em ;
+}
+
+#third{
+    background-color: #001844;
+    width: 80%;
+    border-top-right-radius: 3em;
+    border-top-left-radius: 3em;
+    border-bottom-right-radius: 3em;
+}
+
+.thirdText1{
+    color: white;
+    padding: 1em 0 1em 10em;
+}
+
+.thirdGrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1em;
+    width: 100%;
+    height: 100%;
+    padding: 2em 0 2em 10em;
+}
+
+.thirdGridImg{
+    border: 1px solid black;
+    background-color: white;
+    padding: .5em;
+    width: 17em;
+    height: 25em;
+  
+}
+
+.thirdGridImg img{
+    height: 50%;
+    width: 100%;
+}
+
+.thirdText{
+    text-align: center;
+    padding: .3em;
+}
+
+.thirdText > p{
+    padding: .3em;
+}
+
+.fourthText{
+    text-align: center;
+    padding: 2em;
+}
+
+.fourthGrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: .2em;
+    width: 100%;
+    height: 100%;
+}
+
+.fourthImg{
+    background-color: white;
+    width: 17em;
+    height: 35em;
+    position: relative;
+}
+
+.fourthImg img{
+    width: 100%;
+    height: 100%;
+    border-radius: 1em;
+    
+}
+
+.fourthImgText{
+    position: absolute;
+    bottom: 0;
+    color: white;
+    padding: .8em;  
+}
+
+.fourthImgText > button{
+    background-color: #ffff1e;
+    color: black;
+}
+
+.fourthImgText > button:hover{
+    background-color: white;
+    color: #ffff1e;
+}
+
+.fifthText{
+    text-align: center;
+    padding: 2em;
+}
+
+.input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+}
+
+.fifthIcons{
+    color: blue;
+}
+
+.fifthIcons .bxl-youtube{
+    color: red;
+}
+
+.fifthText > h4{
+    color: #bbbbbb;
+}
+
+.input input{
+    width: 15em;
+    height: 2em; 
+}
+
+.fifthFlex{
+    display: flex;
+    gap: 10em;
+    align-items: center;
+    padding: 1em;
+}
+
+footer{
+    padding: 1em;
+    background-image: url(https://media.istockphoto.com/photos/abstract-white-backgrounds-picture-id1288526180?b=1&k=20&m=1288526180&s=170667a&w=0&h=_EOqs5REGz1w9t2Dxgrg5-2eCUWq8Y3vpZeDw8S98s8=);  
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+    background-position: center;
+}
+
+footer > a{
+    text-align: center;
+}
+
+footer a >h6{
+    padding: 1em 0;
+}
+
+/*@media only screen and (max-width: 688px) {
+    .secondFlex{
+        display: inline;
+    }
+
+    .secondImg{
+        width: 100%;
+        height: 100%;
+       
+    }
+ }
+
